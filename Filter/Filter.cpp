@@ -30,7 +30,7 @@ int main()
 	int* p = a;
 jumper:
 
-	printf("\nFirst number > Second number   AND   First number must > 0!!!\n");
+	printf("\nFirst number < Second number   AND   First number must > 0!!!\n");
 	printf("Eneter n1 :");
 	scanf("%d", &n1);
 	printf("Eneter n2 :");
@@ -48,6 +48,6 @@ jumper:
 	}
 	for (i = 0;i < 10;i++)
 
-	printf(" There are have wirte number %d .... %d times\n", i , a[i]);
+	printf(" %d has been written for .... %d times\n", i , a[i]);
 	return 0;
 }
