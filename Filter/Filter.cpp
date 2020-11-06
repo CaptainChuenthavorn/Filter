@@ -26,12 +26,11 @@ int main()
 	for (i = 0;i < 10;i++)
 	{
 		a[i] = 0;
-		printf(" %d %d\n", i + 1, a[i]);
 	}
 	int* p = a;
 jumper:
 
-	printf("\nn1 > n2 && n1 < 0!!!\n");
+	printf("\nFirst number > Second number   AND   First number must > 0!!!\n");
 	printf("Eneter n1 :");
 	scanf("%d", &n1);
 	printf("Eneter n2 :");
@@ -42,15 +41,13 @@ jumper:
 	}
 	for (int j = n1;j <= n2;j++)
 	{
-		
 		temp = j;
 		while (temp != 0) {
 			temp = filter(p, temp);
-		}
-		
+		}		
 	}
 	for (i = 0;i < 10;i++)
 
-		printf(" %d %d\n", i + 1, a[i]);
+	printf(" There are have wirte number %d .... %d times\n", i , a[i]);
 	return 0;
 }
