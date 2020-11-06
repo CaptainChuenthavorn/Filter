@@ -8,10 +8,17 @@ int main()
 		a[i] = 0;
 		printf(" %d %d\n", i + 1, a[i]);
 	}
-	
-	scanf("%d", &n1);
+jumper:
 
+	printf("n1 > n2 && n1 < 0!!!\n");
+	printf("Eneter n1 :");
+	scanf("%d", &n1);
+	printf("Eneter n2 :");
 	scanf("%d", &n2);
+	if (n2 < n1 || n1<0)
+	{
+		goto jumper;
+	}
 	for (int j = n1;j <= n2;j++)
 	{
 		i = j;
